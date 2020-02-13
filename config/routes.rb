@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :users
   get 'welcome/index'
-
-  resources :sessions, only: [:create, :new, :destroy]
 
   resources :articles do
    resources :comments
