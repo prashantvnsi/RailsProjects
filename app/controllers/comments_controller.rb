@@ -8,11 +8,12 @@ class CommentsController < ApplicationController
 
   before_action :user_session
 
-  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+  
 
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
+    @comments_by_article = Comment.all.group_by(&:article_id)
     redirect_to article_path(@article)
   end
  

@@ -8,10 +8,9 @@ class ArticlesController < ApplicationController
 
   	before_action :user_session
 
-	http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-
         def index
-         @articles = Article.all
+		 @articles = Article.all
+		 @comments_by_article = Comment.all.group_by(&:article_id)
         end
 
 	
