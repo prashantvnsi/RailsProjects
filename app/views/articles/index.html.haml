@@ -1,21 +1,35 @@
-%h1 Listing Articles
+%header.header
+  %ul.nav.nav-tabs
+    %li{class: "#{ 'active' if params[:for].present? }"}
+      = link_to 'back', controller: 'welcome'
+
 = link_to 'New article', new_article_path
 %table
   %tr
     %th Title
-    <th style="display: block; white-space: nowrap; width: 200px; height: 20px; overflow: hidden">
-    %th Text
-    %th{:colspan => "3"}
+    <th style="display: block; white-space: text-align: center; nowrap; width: 100px; height: 20px; overflow: hidden">
+    %th Text   
     %th Total Comments
+    %th{:colspan => "3"}
   - @articles.each do |article|
     %tr
       %td= article.title
-      <td style="display: block; white-space: nowrap; width: 200px; height: 20px; overflow: hidden">
-      %td= article.text
+      <td style="display: block; white-space: nowrap; width: 100px; height: 20px; overflow: hidden">
+      %td= article.text.truncate(100)
+      %td= @comments_by_article[article.id] && @comments_by_article[article.id].count
       %td= link_to 'Show', article_path(article)
       %td= link_to 'Edit', edit_article_path(article)
       %td= link_to 'Destroy', article_path(article), |
           method: :delete,                          |
           data: { confirm: 'Are you sure?' }        |
-      %td= @comments_by_article[article.id] && @comments_by_article[article.id].count
+
+%footer.footer
+  %div{"data-tooltip" => "Email to: prashant.tiwari860@gmail.com"}
+    %li= link_to( 'Contact Us')
+
+      
+
+
+  
+      
       

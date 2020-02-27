@@ -1,3 +1,65 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    .index {
+      h1 { font-size: 21px; }
+    }
+    .show {
+      h1 { font-size: 18px; }
+    }
+  }
+
+.navbar a.brand { font-size: 18px; }
+.navbar a.brand:hover {
+ color: #fff;
+ background-color: transparent;
+ text-decoration: none;
+}
+
+  .container input[type="submit"] {
+    height: 30px;
+    font-size: 13px;
+    background-color: #f55e55;
+    border: none;
+    color: #fff;
+  }
+
+  .app-logo {
+    a {
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 1.4em;
+      color: rgba(255, 255, 255, 0.71);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 0 0 10px rgba(218, 62, 62, 0.32);
+  
+      b {
+        color: rgba(255, 153, 153, 0.83);
+      }
+    }
+  }
+
+[data-tooltip]:before {            
+  position : relative;
+  content : attr(data-tooltip);
+  opacity : 0;
+}
+[data-tooltip]:hover:before {        
+  opacity : 1;
+}
+
+[data-tooltip]:not([data-tooltip-persistent]):before {
+  pointer-events: none;
+}
+
+footer {
+  background-color: #ebebeb;
+  padding: 30px 0;
+}
+
+header {
+  background-color: #ebebeb;
+  padding: 5px 0;
+}

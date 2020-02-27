@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+ .isa_info, .isa_success, .isa_warning, .isa_error {
+  margin: 10px 0px;
+  padding:12px;
+   
+  }
+  .isa_info {
+      color: #00529B;
+      background-color: #BDE5F8;
+  }
+  .isa_success {
+      color: #4F8A10;
+      background-color: #DFF2BF;
+  }
+  .isa_warning {
+      color: #9F6000;
+      background-color: #FEEFB3;
+  }
+  .isa_error {
+      color: #D8000C;
+      background-color: #FFD2D2;
+  }
+  .isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+      margin:10px 22px;
+      font-size:2em;
+      vertical-align:middle;
+  }
+
+ body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    background: #f2f5f8;
+    font-weight: 300;
+  }
+
+  .app-header {
+    margin-bottom: 3em;
+    padding: 1.5em 0;
+    background: rgba(53, 144, 202, 0.95);
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .app-cont {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .app-cont-thin {
+    max-width: 650px;
+    background: #fff;
+    padding: 1em 0;
+    border-radius: 3px;
+  }
+
+  .container input[type="submit"] {
+    height: 30px;
+    font-size: 13px;
+    background-color: #f55e55;
+    border: none;
+    color: #fff;
+  }
+  
+
+  

@@ -8,8 +8,6 @@ class CommentsController < ApplicationController
 
   before_action :user_session
 
-  
-
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)

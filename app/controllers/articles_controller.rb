@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 	
 	def show
          @article = Article.find(params[:id])
-        end
+    end
 
 	def new
 	 @article = Article.new
@@ -34,6 +34,10 @@ class ArticlesController < ApplicationController
    	 else
     	  render 'new'
 	 end
+	end
+
+	def back
+		redirect_to @welcome
 	end
 
 	def update

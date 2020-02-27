@@ -1,7 +1,19 @@
-%h1 Hello, Rails!
-- if user_signed_in?
-  %li= link_to 'LogOUT', destroy_user_session_path, method: :delete
-- else
-  %li
-    = link_to('Login', new_user_session_path)
+%header.header
+  %ul.nav.nav-tabs   
+    - if user_signed_in?
+      %li= link_to 'LOGOUT', destroy_user_session_path, method: :delete
+    - else
+      %li= link_to('Login', new_user_session_path)
+
+//%img{:src => "/images/blogImage.png"}/
+%div{:style => "text-align: center"}
+  %img{:src => "/images/blogImage.png", :width => "100"}/
+
+%h1 Write your own Blog!
+
 = link_to 'My Blog', controller: 'articles'
+
+
+
+
+
