@@ -3,18 +3,18 @@
     %li{class: "#{ 'active' if params[:for].present? }"}
       = link_to 'back', controller: 'welcome'
 
-= link_to 'New article', new_article_path
+%h2
+  = link_to 'New article', new_article_path
+
 %table
   %tr
     %th Title
-    <th style="display: block; white-space: text-align: center; nowrap; width: 100px; height: 20px; overflow: hidden">
     %th Text   
     %th Total Comments
     %th{:colspan => "3"}
   - @articles.each do |article|
     %tr
       %td= article.title
-      <td style="display: block; white-space: nowrap; width: 100px; height: 20px; overflow: hidden">
       %td= article.text.truncate(100)
       %td= @comments_by_article[article.id] && @comments_by_article[article.id].count
       %td= link_to 'Show', article_path(article)
