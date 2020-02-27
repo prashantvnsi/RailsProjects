@@ -1,0 +1,312 @@
+/* line 7, app/assets/stylesheets/articles.scss */
+body .index h1 {
+  font-size: 21px;
+}
+
+/* line 10, app/assets/stylesheets/articles.scss */
+body .show h1 {
+  font-size: 18px;
+}
+
+/* line 14, app/assets/stylesheets/articles.scss */
+.navbar a.brand {
+  font-size: 18px;
+}
+
+/* line 15, app/assets/stylesheets/articles.scss */
+.navbar a.brand:hover {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* line 21, app/assets/stylesheets/articles.scss */
+.container input[type="submit"] {
+  height: 30px;
+  font-size: 13px;
+  background-color: #f55e55;
+  border: none;
+  color: #fff;
+}
+
+/* line 30, app/assets/stylesheets/articles.scss */
+.app-logo a {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 0.71);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px rgba(218, 62, 62, 0.32);
+}
+
+/* line 38, app/assets/stylesheets/articles.scss */
+.app-logo a b {
+  color: rgba(255, 153, 153, 0.83);
+}
+
+/* line 44, app/assets/stylesheets/articles.scss */
+[data-tooltip]:before {
+  position: relative;
+  content: attr(data-tooltip);
+  opacity: 0;
+}
+
+/* line 49, app/assets/stylesheets/articles.scss */
+[data-tooltip]:hover:before {
+  opacity: 1;
+}
+
+/* line 53, app/assets/stylesheets/articles.scss */
+[data-tooltip]:not([data-tooltip-persistent]):before {
+  pointer-events: none;
+}
+
+/* line 57, app/assets/stylesheets/articles.scss */
+footer {
+  background-color: #ebebeb;
+  padding: 5px 0;
+}
+
+/* line 62, app/assets/stylesheets/articles.scss */
+header {
+  background-color: #ebebeb;
+  padding: 5px 0;
+}
+
+/* line 67, app/assets/stylesheets/articles.scss */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 71, app/assets/stylesheets/articles.scss */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* line 74, app/assets/stylesheets/articles.scss */
+th {
+  height: 30px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* line 80, app/assets/stylesheets/articles.scss */
+td {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+/* line 85, app/assets/stylesheets/articles.scss */
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 91, app/assets/stylesheets/articles.scss */
+a:hover {
+  color: red;
+}
+
+/* line 95, app/assets/stylesheets/articles.scss */
+footer {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #666;
+  padding: 10px;
+  margin: 20px;
+  height: auto;
+  width: 100%;
+}
+/* line 5, app/assets/stylesheets/comments.scss */
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* line 15, app/assets/stylesheets/comments.scss */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* line 23, app/assets/stylesheets/comments.scss */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* unvisited link */
+/* line 35, app/assets/stylesheets/comments.scss */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* visited link */
+/* line 41, app/assets/stylesheets/comments.scss */
+a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+/* mouse over link */
+/* line 47, app/assets/stylesheets/comments.scss */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+/* line 5, app/assets/stylesheets/welcome.scss */
+footer {
+  margin-top: 350px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+/* line 12, app/assets/stylesheets/welcome.scss */
+footer a {
+  color: #555;
+}
+
+/* line 16, app/assets/stylesheets/welcome.scss */
+footer a:hover {
+  color: #222;
+}
+
+/* line 20, app/assets/stylesheets/welcome.scss */
+footer small {
+  float: left;
+}
+
+/* line 24, app/assets/stylesheets/welcome.scss */
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+/* line 29, app/assets/stylesheets/welcome.scss */
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 34, app/assets/stylesheets/welcome.scss */
+img {
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 6px;
+  width: 100px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+ .isa_info, .isa_success, .isa_warning, .isa_error {
+  margin: 10px 0px;
+  padding:12px;
+   
+  }
+  .isa_info {
+      color: #00529B;
+      background-color: #BDE5F8;
+  }
+  .isa_success {
+      color: #4F8A10;
+      background-color: #DFF2BF;
+  }
+  .isa_warning {
+      color: #9F6000;
+      background-color: #FEEFB3;
+  }
+  .isa_error {
+      color: #D8000C;
+      background-color: #FFD2D2;
+  }
+  .isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+      margin:10px 22px;
+      font-size:2em;
+      vertical-align:middle;
+  }
+
+ body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    background: #f2f5f8;
+    font-weight: 300;
+  }
+
+  .app-header {
+    margin-bottom: 3em;
+    padding: 1.5em 0;
+    background: rgba(53, 144, 202, 0.95);
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .app-cont {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .app-cont-thin {
+    max-width: 650px;
+    background: #fff;
+    padding: 1em 0;
+    border-radius: 3px;
+  }
+
+  .container input[type="submit"] {
+    height: 30px;
+    font-size: 13px;
+    background-color: #f55e55;
+    border: none;
+    color: #fff;
+  }
+  
+  .label {
+    color: white;
+    padding: 8px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+  
+
+/*# sourceMappingURL=application.css-61d7e7f37c9d4b22b529f93f74c7370a9af8c944dd53f6efae6fbe29f9ac3362.map */
